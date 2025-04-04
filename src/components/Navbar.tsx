@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Terminal } from "lucide-react"; // or any icon you like
 import Image from "next/image";
 
 const Navbar = () => {
@@ -17,14 +16,14 @@ const Navbar = () => {
     { label: "Projects", href: "#projects" },
     { label: "Skills", href: "#skills" },
     { label: "Contact", href: "#contact" },
-    { label: "Resume", href: "resume" }
+    { label: "Resume", href: "resume" },
   ];
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full bg-slate-300 text-slate-800 shadow-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 font-centra text-lg sm:text-xl font-bold text-violet-950">
-          <div className="aspect-[3/2] w-5 sm:w-6 md:w-7 animate-wave origin-left">
+        <div className="font-Georgia flex items-center gap-1.5 text-lg font-bold text-violet-950 sm:gap-2 sm:text-xl md:gap-3">
+          <div className="animate-wave relative aspect-[3/2] w-5 origin-left sm:w-6 md:w-7">
             <Image
               src="/mmflag.svg"
               alt="Myanmar Flag"
@@ -36,16 +35,16 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden gap-6 md:flex">
+        <div className="font-Georgia hidden gap-6 md:flex">
           {navItems.map(({ label, href }) => (
             <Link
               key={href}
               href={href}
-              className="group relative inline-block text-sm font-medium text-slate-800 transition-colors duration-200"
+              className="font-Georgia group relative inline-block text-sm font-medium text-slate-800 transition-all duration-200"
             >
               <span className="relative">
                 {label}
-                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+                <span className="block h-px max-w-full scale-x-0 bg-current transition-transform duration-300 group-hover:scale-x-100" />
               </span>
             </Link>
           ))}
@@ -58,7 +57,7 @@ const Navbar = () => {
           aria-label="Toggle Menu"
         >
           <svg
-            className="h-6 w-6 text-[#f2b544]"
+            className="h-6 w-6 text-zinc-900"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -85,15 +84,18 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="space-y-2 bg-[#0a192f] px-4 pb-4 md:hidden">
+        <div className="font-Georgia space-y-2 bg-slate-300 px-4 pb-4 text-slate-800 md:hidden">
           {navItems.map(({ label, href }) => (
             <Link
               key={href}
               href={href}
-              className="block font-centra text-white transition-colors duration-200 hover:text-[#f2b544]"
               onClick={() => setMenuOpen(false)}
+              className="group block text-sm font-medium transition-colors duration-200"
             >
-              {label}
+              <span className="relative inline-block">
+                {label}
+                <span className="block h-px max-w-full scale-x-0 bg-current transition-transform duration-300 group-hover:scale-x-100" />
+              </span>
             </Link>
           ))}
         </div>
