@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { Terminal } from "lucide-react"; // or any icon you like
+import Image from "next/image";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,26 +17,35 @@ const Navbar = () => {
     { label: "Projects", href: "#projects" },
     { label: "Skills", href: "#skills" },
     { label: "Contact", href: "#contact" },
+    { label: "Resume", href: "resume" }
   ];
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full bg-slate-300 text-slate-800 shadow-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <div className="font-evil text-xl font-bold text-[#f2b544]">
-          Win
+        <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 font-centra text-lg sm:text-xl font-bold text-violet-950">
+          <div className="aspect-[3/2] w-5 sm:w-6 md:w-7 animate-wave origin-left">
+            <Image
+              src="/mmflag.svg"
+              alt="Myanmar Flag"
+              fill
+              className="object-contain"
+            />
+          </div>
+          Win Thant Tin Han
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden gap-6 font-centra md:flex">
+        <div className="hidden gap-6 md:flex">
           {navItems.map(({ label, href }) => (
             <Link
               key={href}
               href={href}
-              className="group relative inline-block text-sm font-medium text-slate-800 transition-colors duration-200 hover:text-[#f2b544]"
+              className="group relative inline-block text-sm font-medium text-slate-800 transition-colors duration-200"
             >
               <span className="relative">
                 {label}
-                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-[#f2b544] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
               </span>
             </Link>
           ))}
