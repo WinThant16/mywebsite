@@ -45,27 +45,28 @@ export default function Home() {
       >
         <div className="mx-auto max-w-3xl space-y-6">
           <p className="text-base leading-relaxed sm:text-lg md:text-xl">
-            “Even the smallest candle can shine bright in the darkest night.”{" "}
-            <br /> <br />I carry this Burmese saying with me wherever I go — a
-            reminder of the strength, warmth, and resilience of the people of
-            Myanmar. My roots in this beautiful country are at the heart of who
-            I am.
+            “မရှိတာထက် မသိတာ ခက် - Not knowing is worse than not having.”{" "}
+            <br /> <br />I carry this Burmese saying with me wherever I go. It is
+            a saying that has been passed down through generations in my family, a
+            reminder of the importance of knowledge, curiosity, and the pursuit of
+            understanding. It reflects my journey from Myanmar to the United
+            States, a journey that has been shaped by my roots and the values
+            instilled in me by my family and culture.
           </p>
 
           <p className="text-base leading-relaxed sm:text-lg md:text-xl">
             I grew up in Yangon, where the sound of street vendors, scent of
             mohinga, and vibrant neighborhood energy filled my everyday life. My
             childhood was shaped by both the simplicity and richness of Burmese
-            culture — a deep sense of community, curiosity, and creativity that
-            sparked my early interest in technology.
+            culture which had a deep sense of community, curiosity, and
+            creativity that sparked my early interest in technology.
           </p>
 
           <p className="text-base leading-relaxed sm:text-lg md:text-xl">
             Today, I’m pursuing my undergraduate degree in Computer Science at
-            UC Riverside. It’s been a journey of growth - academically and
-            personally - where I’ve had the chance to explore everything from
-            full-stack development to embedded systems, machine learning, and AI
-            ethics.
+            UC Riverside. It’s been a journey of growth, academically and
+            personally, here I’ve had the chance to explore everything from
+            full-stack development to embedded systems, machine learning, and database systems.
           </p>
 
           <p className="text-base leading-relaxed sm:text-lg md:text-xl">
