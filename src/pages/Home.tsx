@@ -7,7 +7,10 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex min-h-[100dvh] flex-col items-center justify-center bg-slate-200 px-6 text-center text-slate-800">
+      <section
+        id="hero"
+        className="flex min-h-[100dvh] flex-col items-center justify-center bg-slate-200 px-6 text-center text-slate-800"
+      >
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -37,6 +40,7 @@ export default function Home() {
 
       {/* About Section - Animates on scroll */}
       <motion.section
+        id="about"
         className="px-6 py-12 text-center text-slate-800"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -78,6 +82,23 @@ export default function Home() {
           </p>
         </div>
       </motion.section>
+
+      {/* Awards Section */}
+      <section id="awards" className="bg-slate-50 px-6 py-20 text-center">
+        <h2 className="mb-6 text-2xl font-bold">Awards & Certifications</h2>
+        <div className="space-y-4">
+          <p>
+            <strong>Dean&apos;s List @ UCR</strong> – Every quarter (2021–2025)
+          </p>
+          <p>
+            <strong>Best Virtual Presentation</strong> – UCR Undergraduate
+            Research Symposium (2024)
+          </p>
+          <p>
+            <strong>USC Merit Scholarship Recipient</strong> – Fall 2025
+          </p>
+        </div>
+      </section>
     </>
   );
 }
