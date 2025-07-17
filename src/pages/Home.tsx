@@ -30,7 +30,7 @@ export default function Home() {
             animate={{ width: "100%" }}
             transition={{ duration: 2, ease: "easeInOut" }}
           >
-            Hi, I'm Win.
+            Hi, I&apos;m Win.
           </motion.h1>
         </motion.div>
       </section>
@@ -44,7 +44,7 @@ export default function Home() {
         viewport={{ once: true }}
       >
         <div className="mx-auto max-w-3xl space-y-6">
-          <p className="text-base leading-relaxed sm:text-lg md:text-xl">
+          {/* <p className="text-base leading-relaxed sm:text-lg md:text-xl">
             “မရှိတာထက် မသိတာ ခက် - Not knowing is worse than not having.”{" "}
             <br /> <br />I carry this Burmese saying with me wherever I go. It is
             a saying that has been passed down through generations in my family, a
@@ -52,7 +52,7 @@ export default function Home() {
             understanding. It reflects my journey from Myanmar to the United
             States, a journey that has been shaped by my roots and the values
             instilled in me by my family and culture.
-          </p>
+          </p> */}
 
           <p className="text-base leading-relaxed sm:text-lg md:text-xl">
             I grew up in Yangon, where the sound of street vendors, scent of
@@ -63,15 +63,17 @@ export default function Home() {
           </p>
 
           <p className="text-base leading-relaxed sm:text-lg md:text-xl">
-            Today, I’m pursuing my undergraduate degree in Computer Science at
-            UC Riverside. It’s been a journey of growth, academically and
-            personally, here I’ve had the chance to explore everything from
-            full-stack development to embedded systems, machine learning, and database systems.
+            Today, I’m pursuing a Master of Science degree in Computer Science
+            at USC, after earning my Bachelor&apos;s at UC Riverside. It&apos;s
+            been a journey of growth, academically and personally, here
+            I&apos;ve had the chance to explore everything from full-stack
+            development to embedded systems, machine learning, and database
+            systems.
           </p>
 
           <p className="text-base leading-relaxed sm:text-lg md:text-xl">
             I’m passionate about building thoughtful, user-friendly technology
-            that makes a real impact. When I’m not coding, I love cooking
+            that makes a real impact. When I&apos;m not coding, I love cooking
             Burmese food, collecting Pokémon cards, and geeking over NBA stats.
           </p>
         </div>
